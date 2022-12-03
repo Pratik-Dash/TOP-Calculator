@@ -1,3 +1,6 @@
+body{
+    background-color: #9DDBAD;
+}
 .container{
     border: 3px solid;
     margin: 0 auto;
@@ -6,8 +9,9 @@
     justify-content: center;
     margin-top: 1rem;
     border-radius: 1rem;
-    padding: 2rem;
-    width: 25rem;
+    padding: 1.5rem;
+    width: 23rem;
+    background-color: #303335;
 }
 .buttons{
     display: grid;
@@ -15,18 +19,44 @@
     grid-template-rows: repeat(5,1fr);
     column-gap: 10px;
     row-gap: 10px;
-    margin-top: 1rem;
+    margin-top: 3rem;
+    
 }
+
 .button{
     height: 5rem;
    padding: 1rem;
    cursor: pointer;
    border-radius: .6rem;
    background-color: transparent;
-   font-size: medium;
+   font-size: large;
+   border: 2px solid #0F0616;
+   color: black;
+   background-color: #FCFBF0;
 
     
 }
+.clear, .delete{
+    background-color: #551825;
+    color: #EAECEC;
+}
+
+.button:hover{
+    background-color: #F7F0DF;
+    color: black ;
+    transition: .2s;
+}
+.clear:hover{
+    background-color: #722233;
+    color: #EAECEC;
+    transition: .2s;
+}
+.delete:hover{
+    background-color: #802437;
+    color: #EAECEC;
+    transition: .2s;
+}
+
 
 .display{
     width: 80%;
@@ -34,9 +64,59 @@
     padding: 2rem;
     height: 50px;
     border: 3px solid black;
-    display: flex;
+    background-color: #031e11;
+    color: #14fdce;
+    text-align: right;
+    word-wrap: normal;
+    
+    
     
 }
 .equalBtn{
     grid-column: 3/ span 2;
+    background-color:  #8F011B;
+    color: #EAECEC;
 }
+.equalBtn:hover{
+
+    background-color: #b3112e;
+    color: #EAECEC;
+    transition: .2s;
+}
+.previousoperand{
+    font-size: medium;
+}
+.currentoperand{
+    font-size: x-large;
+    transition: .4s;
+    font-style: italic;
+}
+.currentoperanddisplay{
+    font-size: 40px;
+    width: 100%;
+}
+.previousoperanddisplay{
+
+    font-size: 25px;
+    margin-top: 0;
+}
+footer{
+
+    text-align: center;
+    font-size: large;
+    margin: 1rem;
+
+}
+a{
+    text-decoration: none;
+    color: black;
+    cursor: pointer;
+    font-size: large;
+}
+a:hover{
+    color: #471f66;
+    transition: .2s;
+}
+
+
+
